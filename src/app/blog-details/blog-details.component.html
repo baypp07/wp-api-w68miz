@@ -1,0 +1,7 @@
+<div class="container">
+	<div *ngIf="post">
+		<h5>{{ post.title.rendered }}</h5>
+		<p class="card-text">{{ post.content }}</p>
+		<p class="card-text" [innerHTML]="post.content"></p>
+	</div>
+</div>
